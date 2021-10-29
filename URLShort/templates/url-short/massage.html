@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
+your link is : <br/>
+<a href="/s/{{ short_url }}/">{{ request.get_host }}/s/{{ short_url }}</a>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form class="form-group" action='' method='post' enctype='multipart/form-data'>
+{% csrf_token %}
+<table>
+{{ form }}
+</table>
+<br/>
+<input type='submit' class="btn btn-primary btn-lg btn-block" value='Send'/><br/>
+</form>
+{% endblock %}
